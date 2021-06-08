@@ -25,19 +25,21 @@ footer {
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1rem;
-  padding: 2vw;
+  padding-top: 3vw;
   font-style: italic;
 }
 
 p {
   font-family: "Poppins", sans-serif;
   color: white;
+  padding-block: 1vw;
 }
 
 h2 {
   font-family: "Poppins", sans-serif;
   color: white;
   font-weight: bold;
+  font-size: 2rem;
 }
 
 h4 {
@@ -83,20 +85,12 @@ h4 {
 
 /**********************************PORTFOLIE**************************/
 
-@media (min-width: 800px) {
-  #portfolie {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    place-content: center;
-
-    gap: 50px;
-  }
-}
 #portfolie {
   padding: 1vw;
+  gap: 40px;
+  display: grid;
 }
+
 #portfolie img {
   border-radius: 3%;
 }
@@ -107,7 +101,7 @@ h4 {
   opacity: 0;
   display: flex;
   justify-content: center;
-  transform: translateY(-400%);
+  transform: translateY(-350%);
 }
 
 .img_1:hover .image {
@@ -116,6 +110,18 @@ h4 {
 
 .img_1:hover .middle {
   opacity: 1;
+}
+
+@media (min-width: 800px) {
+  #portfolie {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    gap: 80px;
+    padding: 0;
+  }
 }
 
 /*************************************************BURGER-MENU***********************************************************************/
@@ -128,7 +134,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
   font-size: 1rem;
   padding-bottom: 50px;
 }
@@ -177,5 +182,68 @@ nav {
     align-items: center;
     gap: 45px;
     font-size: 1.5rem;
+  }
+}
+
+/*******************************************KNAP*******************************************************************/
+#tema_section {
+  display: flex;
+  justify-content: center;
+}
+
+#temaer {
+  align-items: center;
+  max-width: 900px;
+  display: grid;
+  line-height: 1.8rem;
+}
+
+.knap {
+  display: flex;
+  justify-content: center;
+  padding: 2vw;
+}
+#link_knap {
+  background-color: rgb(68, 68, 173);
+  display: flex;
+  padding: 1vw;
+  border: none;
+}
+
+/**********************************************OM MIG*********************************************/
+#container {
+  padding: 1.5vw;
+  gap: 10px;
+}
+
+#first_section img {
+  border-radius: 50%;
+}
+
+@media (min-width: 800px) {
+  #first_section {
+    display: flex;
+    justify-content: center;
+  }
+  #om_mig {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 5vw;
+  }
+
+  #second_section {
+    display: flex;
+    justify-content: center;
+  }
+
+  #artworks {
+    max-width: 900px;
+  }
+  .artwork_images {
+    display: flex;
+    gap: 20px;
+    width: 200px;
   }
 }
