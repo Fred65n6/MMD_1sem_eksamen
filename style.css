@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #6696cd;
+  background-color: #4f7db3;
   padding: 1vw;
   margin: 0 auto;
 }
@@ -165,13 +165,13 @@ nav {
   border-radius: 50%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   #first_section {
     display: flex;
     justify-content: center;
   }
   #om_mig {
-    max-width: 1000px;
+    max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
