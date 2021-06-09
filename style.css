@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #4f7db3;
+  background: black;
   padding: 1vw;
   margin: 0 auto;
 }
@@ -162,6 +162,8 @@ nav {
 }
 
 #first_section img {
+  border: white;
+  border-style: solid;
   border-radius: 50%;
 }
 
@@ -204,6 +206,8 @@ nav {
 
 #portfolie img {
   border-radius: 3%;
+  border: white;
+  border-style: solid;
 }
 
 .middle {
@@ -221,6 +225,7 @@ nav {
 
 .img_1:hover .middle {
   opacity: 1;
+  color: white;
 }
 
 @media (min-width: 800px) {
@@ -255,14 +260,16 @@ nav {
 .knap {
   display: flex;
   justify-content: center;
-  padding: 2vw;
+  margin: 30px;
 }
 
 #link_knap {
-  background-color: rgb(68, 68, 173);
+  justify-content: center;
+  background-color: #4f7db3;
   display: flex;
   padding: 1vw;
-  border: none;
+  border: white;
+  border-style: solid;
 }
 
 .tilbage {
