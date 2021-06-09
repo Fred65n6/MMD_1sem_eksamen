@@ -6,7 +6,7 @@ img {
 
 body {
   background-color: #6696cd;
-  max-width: 1200px;
+  padding: 1vw;
   margin: 0 auto;
 }
 
@@ -47,84 +47,7 @@ h4 {
   color: white;
 }
 
-/***************************FORSIDE******************************/
-
-@font-face {
-  font-family: quentin;
-  src: url(fonts/quentin-webfont.woff2);
-}
-
-.logo {
-  margin: 0 auto;
-  padding: 30px;
-}
-
-@media (min-width: 800px) {
-  .logo {
-    max-width: 800px;
-    border: white;
-    border-style: solid;
-  }
-}
-
-.logo_1 {
-  margin: 0 auto;
-  text-align: center;
-  font-family: quentin;
-  color: white;
-  font-size: 110px;
-}
-
-.logo_2 {
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 60px;
-}
-
-/**********************************PORTFOLIE**************************/
-
-#portfolie {
-  padding: 1vw;
-  gap: 40px;
-  display: grid;
-}
-
-#portfolie img {
-  border-radius: 3%;
-}
-
-.middle {
-  font-size: 2rem;
-  transition: 0.5s ease;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  transform: translateY(-350%);
-}
-
-.img_1:hover .image {
-  opacity: 0.3;
-}
-
-.img_1:hover .middle {
-  opacity: 1;
-}
-
-@media (min-width: 800px) {
-  #portfolie {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    place-content: center;
-    gap: 80px;
-    padding: 0;
-  }
-}
-
-/*************************************************BURGER-MENU***********************************************************************/
+/************************BURGER-MENU*****************************/
 nav img {
   width: 100px;
   cursor: pointer;
@@ -172,7 +95,7 @@ nav {
 
   nav {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1500px;
     display: flex;
   }
 
@@ -180,37 +103,51 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 45px;
+    gap: 25px;
     font-size: 1.5rem;
   }
 }
 
-/*******************************************KNAP*******************************************************************/
-#tema_section {
-  display: flex;
-  justify-content: center;
+/************************FORSIDE******************************/
+
+@font-face {
+  font-family: quentin;
+  src: url(fonts/quentin-webfont.woff2);
 }
 
-#temaer {
-  align-items: center;
-  max-width: 900px;
-  display: grid;
-  line-height: 1.8rem;
+.logo {
+  margin: 0 auto;
+  padding: 30px;
+  background-image: url(billeder/photo-1532935702929-2a7df164ddea.webp);
+  object-fit: cover;
 }
 
-.knap {
-  display: flex;
-  justify-content: center;
-  padding: 2vw;
-}
-#link_knap {
-  background-color: rgb(68, 68, 173);
-  display: flex;
-  padding: 1vw;
-  border: none;
+@media (min-width: 800px) {
+  .logo {
+    max-width: 800px;
+    border: white;
+    border-style: solid;
+  }
 }
 
-/**********************************************OM MIG*********************************************/
+.logo_1 {
+  margin: 0 auto;
+  text-align: center;
+  font-family: quentin;
+  color: white;
+  font-size: 110px;
+}
+
+.logo_2 {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+}
+
+/**************************OM MIG***************************/
+
 #container {
   padding: 1.5vw;
   gap: 10px;
@@ -226,7 +163,7 @@ nav {
     justify-content: center;
   }
   #om_mig {
-    max-width: 900px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -246,4 +183,78 @@ nav {
     gap: 20px;
     width: 200px;
   }
+}
+
+/*********************PORTFOLIE**************************/
+
+#portfolie {
+  max-width: 1000px;
+  padding: 1vw;
+  gap: 40px;
+  display: grid;
+}
+
+#portfolie img {
+  border-radius: 3%;
+}
+
+.middle {
+  font-size: 2rem;
+  transition: 0.5s ease;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-350%);
+}
+
+.img_1:hover .image {
+  opacity: 0.3;
+}
+
+.img_1:hover .middle {
+  opacity: 1;
+}
+
+@media (min-width: 800px) {
+  #portfolie {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    gap: 80px;
+    padding: 0;
+  }
+}
+
+/***********************TEMA SECTION**************************/
+#tema_section {
+  display: flex;
+  justify-content: center;
+}
+
+#temaer {
+  align-items: center;
+  max-width: 1000px;
+  display: grid;
+  line-height: 1.8rem;
+}
+
+.knap {
+  display: flex;
+  justify-content: center;
+  padding: 2vw;
+}
+
+#link_knap {
+  background-color: rgb(68, 68, 173);
+  display: flex;
+  padding: 1vw;
+  border: none;
+}
+
+.tilbage {
+  padding-top: 4vw;
+  text-decoration: underline;
+  color: white;
 }
