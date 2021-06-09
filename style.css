@@ -16,7 +16,7 @@ body {
 }
 
 a:hover {
-  color: darkred;
+  color: firebrick;
 }
 
 a {
@@ -27,6 +27,7 @@ a {
 }
 
 footer {
+  display: none;
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1rem;
@@ -90,6 +91,10 @@ nav {
     display: none;
   }
 
+  nav img {
+    width: 150px;
+  }
+
   #menu.hidden {
     transform: translateX(0);
     opacity: 1;
@@ -123,21 +128,12 @@ nav {
 }
 
 .logo {
+  max-width: none;
   margin: 0 auto;
-  border: white;
-  border-style: solid;
   padding: 30px;
-  background-image: url(billeder/photo-1439792675105-701e6a4ab6f0.jfif);
+  background-image: url(billeder/sunset_2.png);
+  object-fit: scale-down;
 }
-
-@media (min-width: 800px) {
-  .logo {
-    background-image: url(billeder/photo-1439792675105-701e6a4ab6f0.jfif);
-    border: white;
-    border-style: solid;
-  }
-}
-
 .logo_1 {
   margin: 0 auto;
   text-align: center;
@@ -162,6 +158,7 @@ nav {
 }
 
 #first_section img {
+  margin-top: 2vw;
   border: white;
   border-style: solid;
   border-radius: 50%;
@@ -198,45 +195,43 @@ nav {
 /*********************PORTFOLIE**************************/
 
 #portfolie {
-  max-width: 1000px;
-  padding: 1vw;
-  gap: 40px;
   display: grid;
 }
 
 #portfolie img {
   border-radius: 3%;
-  border: white;
-  border-style: solid;
 }
 
-.middle {
+.se_mere {
   font-size: 2rem;
   transition: 0.5s ease;
   opacity: 0;
   display: flex;
   justify-content: center;
-  transform: translateY(-350%);
+  transform: translateY(-250%);
 }
 
 .img_1:hover .image {
   opacity: 0.3;
 }
 
-.img_1:hover .middle {
+.img_1:hover .se_mere {
   opacity: 1;
-  color: white;
+  color: firebrick;
 }
 
 @media (min-width: 800px) {
   #portfolie {
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     place-content: center;
-    gap: 80px;
+    gap: 20px;
     padding: 0;
+  }
+
+  #portfolie img {
+    width: 20vw;
   }
 }
 
