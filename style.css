@@ -141,7 +141,7 @@ nav {
   text-align: center;
   font-family: quentin;
   color: white;
-  font-size: 110px;
+  font-size: 7rem;
 }
 
 .logo_2 {
@@ -149,7 +149,7 @@ nav {
   text-align: center;
   color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 60px;
+  font-size: 4rem;
 }
 
 @media (max-width: 400px) {
