@@ -99,6 +99,7 @@ nav {
   #menu.hidden {
     transform: translateX(0);
     opacity: 1;
+    pointer-events: all;
   }
 
   #menu li {
@@ -118,13 +119,6 @@ nav {
     align-items: center;
     gap: 25px;
     font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 400px) {
-  nav img {
-    width: 60px;
-    cursor: pointer;
   }
 }
 
