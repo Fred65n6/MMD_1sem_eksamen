@@ -124,12 +124,15 @@ nav {
 
 .logo {
   margin: 0 auto;
+  border: white;
+  border-style: solid;
   padding: 30px;
+  background-image: url(billeder/photo-1439792675105-701e6a4ab6f0.jfif);
 }
 
 @media (min-width: 800px) {
   .logo {
-    background-color: black;
+    background-image: url(billeder/photo-1439792675105-701e6a4ab6f0.jfif);
     border: white;
     border-style: solid;
   }
@@ -238,9 +241,13 @@ nav {
   justify-content: center;
 }
 
+#om_mig {
+  max-width: 900px;
+}
+
 #temaer {
   align-items: center;
-  max-width: 1000px;
+  max-width: 900px;
   display: grid;
   line-height: 1.8rem;
 }
