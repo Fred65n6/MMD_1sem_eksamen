@@ -11,9 +11,3 @@ function toggleMenu() {
 
   let erSkjult = document.querySelector("#menu").classList.contains("hidden");
 }
-//   if (erskjult == true) {
-//     document.querySelector("#menuknap").textContent = "☰";
-//   } else {
-//     document.querySelector("#menuknap").textContent = "X";
-//   }
-// }
