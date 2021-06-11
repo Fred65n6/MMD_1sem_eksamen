@@ -216,6 +216,7 @@ nav {
   .artwork_images {
     display: flex;
     gap: 35px;
+    width: 58vw;
   }
 }
 
