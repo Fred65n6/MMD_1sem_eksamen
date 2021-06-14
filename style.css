@@ -288,6 +288,10 @@ nav {
   justify-content: center;
 }
 
+.tema img {
+  display: grid;
+}
+
 #om_mig {
   max-width: 900px;
 }
