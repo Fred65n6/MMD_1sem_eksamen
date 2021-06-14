@@ -1,5 +1,5 @@
 img {
-  display: block;
+  display: inline-block;
   width: 100%;
   height: auto;
 }
@@ -224,12 +224,13 @@ nav {
     justify-content: center;
   }
 
-  #artworks {
+  .artworks {
     max-width: 900px;
   }
   .artwork_images {
     display: flex;
     gap: 35px;
+    overflow-x: auto;
   }
 }
 
