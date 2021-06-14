@@ -227,8 +227,10 @@ nav {
   .artworks {
     max-width: 900px;
   }
+
   .artwork_images {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 35px;
   }
 }
