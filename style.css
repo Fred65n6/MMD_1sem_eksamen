@@ -230,7 +230,6 @@ nav {
   .artwork_images {
     display: flex;
     gap: 35px;
-    overflow-x: auto;
   }
 }
 
