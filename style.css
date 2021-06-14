@@ -32,12 +32,12 @@ footer {
   font-size: 1rem;
   padding-top: 1.5vw;
   font-style: italic;
-  text-decoration: underline;
 }
 
 hr {
   color: white;
   width: 900px;
+  margin: 3vw;
 }
 
 p {
@@ -55,16 +55,16 @@ h1 {
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
-h4 {
+h3 {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /************************BURGER-MENU*****************************/
